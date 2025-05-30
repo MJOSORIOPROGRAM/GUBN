@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--logo gubn para pestaña de browser-->
+    <link rel="shortcut icon" href="./img/Logo GUBN contornos.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container-fluid m-auto">
+      <!-- barra de navegacion -->
+      <!-- fragmento del navbar corregido -->
+      <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container-fluid">
+          <a href="index.html"><img src="./img/Logo GUBN contornos.png"
+              alt="logo"
+              width="90px"
+              height="82px"
+              style="border-radius: 50%; margin-right: 20px;"></a>
+          <div class="d-lg-none text-center top-50 ">
+            <span class="fw-bold fs-4">Home</span>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!--acordion respodivo-->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"
+                  href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contexto.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="colombia.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="latam.html">blogk</a>
+              </li>
+            </ul>
+            <!--inicio del boton buscar-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search"
+                placeholder="Busca una palabra clave" aria-label="Search">
+              <button class="btn btn-outline-success"
+                type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- carrusel -->
+
+      <div id="carouselExampleCaptions" class="carousel slide m-5 p-5"
+        data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="./img/Roll cinamon.png" class="d-block w-100" alt="img1"
+              style="max-height: 590px;">
+            <div class="carousel-caption d-none d-md-block">
+              <!--para poner texto sobre la imagen -->
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1500">
+            <img src="./img/1.png" class="d-block w-100" alt="img2"
+              style="max-height: 590px;">
+            <div class="carousel-caption d-none d-md-block">
+              <!--<h5>Second slide label</h5>
+              <p>Some representative placeholder content for the
+                second slide.</p>-->
+            </div>
+          </div>
+          <div class="carousel-item " data-bs-interval="2500">
+            <img src="./img/carrusel 3.png" class=" display-6 w-100" alt="img3"
+              style="max-height: 590px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Torta de chocolate</h3>
+            </div>
+          </div>
+        </div>
+        <!--flechas carrucel-->
+        <button class="carousel-control-prev" type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container-cards text-center align-content-center m-auto w-75">
+        <div class="card mb-4 mt-5 ">
+          <div class="row g-0">
+            <div class="col-md-4 col-1-lg">
+              <img src="./img/Logo GUBN contornos.png"
+                class="img-fluid w-50 h-auto"
+                alt="...">
+            </div>
+            <div class="col-md-8 col-1-lg">
+              <div class="card-body" style="background-color: #ffffff;">
+                <h5 class="card-title">Quines Somos</h5>
+                <p class="card-text  ">
+                  GUBN nació en el año 2020, destacándose por su repostería de
+                  alta calidad y un maridaje perfecto para los amantes de los
+                  buenos momentos en lugares distintivos. El nombre "GUBN"
+                  proviene del árabe clásico y significa "hecho de queso".
+                  Nuestra primera creación, la torta de Almojábana, marcó el
+                  inicio de nuestra historia.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-cards text-center m-auto w-75">
+        <div class="card mb-3 mt-4">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body"
+                style="background-color: #ffffff; text-align: center;">
+                <h5 class="card-title">Misión y Visión</h5>
+                <p class="card-text">En los próximos tres años, aspiramos a ser
+                  reconocidos en la región como una empresa de repostería
+                  transformadora que genera valor tanto a nuestros proveedores
+                  como a nuestros consumidores. Nos comprometemos a mantener la
+                  excelencia en el servicio y la calidad de nuestros productos,
+                  asegurando siempre la satisfacción de nuestros clientes.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="./img/eventos (1).png" class="img-fluid w-100 "
+                alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+
+      <h2 class="  text-center h-25 w-25 m-auto mt-5 mb-2"
+        style="background-color: #95AB63; border-radius: 20px;">Edúcate</h2>
+
+      <div class="card-educate">
+        <div class="content-card p-3">
+          <div class="card-flip">
+            <div class="card">
+              <div class="card-delantera2"
+                style="background-image: url(images/img-edu1.jpeg);">
+                <div class="bg"></div>
+                <div class="contenido-card-delantera">
+                </div>
+              </div>
+
+              <div class="card-atras">
+                <div class="contenido-card-atras">
+                  <h1>Terminados</h1>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias consequuntur libero nisi at natus rem fugiat porro
+                    illum. Consectetur quo, omnis nemo qui sapiente explicabo
+                    vel! Odio eius beatae consequuntur?
+                    Sed aspernatur mollitia error ipsum et animi veniam
+                    repellendus, cupiditate commodi odio ad! Reprehenderit
+                    quidem repudiandae tempore</p>
+                  <a type="butto" value="leer mas"
+                    href="../pg proyecto2/servicios.html">Leer más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card p-3">
+          <div class="card-flip">
+            <div class="card">
+              <div class="card-delantera2"
+                style="background-image: url(images/img-edu2.jpeg);">
+                <div class="bg"></div>
+                <div class="contenido-card-delantera">
+                </div>
+              </div>
+
+              <div class="card-atras">
+                <div class="contenido-card-atras">
+                  <h1>Terminados</h1>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias consequuntur libero nisi at natus rem fugiat porro
+                    illum. Consectetur quo, omnis nemo qui sapiente explicabo
+                    vel! Odio eius beatae consequuntur?
+                    Sed aspernatur mollitia error ipsum et animi veniam
+                    repellendus, cupiditate commodi odio ad! Reprehenderit
+                    quidem repudiandae tempore </p>
+                  <a type="butto" value="leer mas"
+                    href="../pg proyecto2/servicios.html">Leer más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card p-3">
+          <div class="card-flip">
+            <div class="card">
+              <div class="card-delantera2"
+                style="background-image: url(images/img-edu3.jpeg);">
+                <div class="bg"></div>
+                <div class="contenido-card-delantera">
+                </div>
+              </div>
+
+              <div class="card-atras">
+                <div class="contenido-card-atras">
+                  <h1>Terminados</h1>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias consequuntur libero nisi at natus rem fugiat porro
+                    illum. Consectetur quo, omnis nemo qui sapiente explicabo
+                    vel! Odio eius beatae consequuntur?
+                    Sed aspernatur mollitia error ipsum et animi veniam
+                    repellendus, cupiditate commodi odio ad! Reprehenderit
+                    quidem repudiandae tempore </p>
+                  <a type="butto" value="leer mas"
+                    href="../pg proyecto2/servicios.html">Leer más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <!--marcas donde esta gubn-->
+      <div class="titulomarcasaliadas text-center"><h1>Encuentranos
+          en👇</h1>
+      </div>
+      <div class="announcement-bar" data-bs-ride="4000">
+        <div class="scroll-container mt-5">
+          <div class="scroll-text">
+            <a href="https://www.instagram.com/cafelamorelia/"
+              target="_blank">
+              <img id="CR" src="./img/CAFE-LA-MORELIA_LOGO-COLOR.png"
+                alt="Empresa 1"
+                width="auto" height="80px"></a>
+            <a href="https://www.instagram.com/cafesuperioroficial/
+              target="_blank">
+              <img id="CR" src="./img/marcas/superior.png" alt="Empresa 2" />
+            </a>
+            <a href="https://www.instagram.com/latertulia.cafe/"
+              target="_blank">
+              <img id="CR" src="./img/marcas/tertulia.jpg" alt="Empresa 3" />
+            </a>
+            <a
+              href="https://www.instagram.com/murciaramirezcoffee?igsh=cHVld2J0MXVoZWRr"
+              target="_blank">
+              <img id="CR" src="./img/marcas/myr.jpg" class="Empresa 4"
+                style="border-radius: 50%;" />
+            </a>
+            <a href="https://www.instagram.com/laberintomilcaminos/"
+              target="_blank">
+              <img id="CR" src="./img/marcas/mil caminos.jpg" alt="Empresa 5"
+                style="border-radius: 50%;" />
+            </a>
+            <a href="https://www.instagram.com/boticasol/"
+              target="_blank">
+              <img id="CR" src="./img/marcas/botica sol.jpg" alt="Empresa 5"
+                style="border-radius: 50%;" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61562028640409"
+              target="_blank">
+              <img id="CR" src="./img/marcas/cantaleta.jpg" alt="Empresa 5"
+                style="border-radius: 50%;" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100038068970532"
+              target="_blank">
+              <img id="CR" src="./img/marcas/klula.jpg" alt="Empresa 5"
+                style="border-radius: 50%;" />
+            </a>
+            <!--inicio de segundo ciclo bucle-->
+            <a href="https://www.instagram.com/cafelamorelia/"
+              target="_blank">
+              <img id="CR" src="./img/CAFE-LA-MORELIA_LOGO-COLOR.png"
+                alt="Empresa 1"
+                width="auto" height="80px"></a>
+            <a href="https://www.instagram.com/cafesuperioroficial/
+              target="_blank">
+              <img id="CR" src="./img/marcas/superior.png" alt="Empresa 2" />
+            </a>
+            <a href="https://www.instagram.com/latertulia.cafe/"
+              target="_blank">
+              <img id="CR" src="./img/marcas/tertulia.jpg" alt="Empresa 3" />
+            </a>
+            <a
+              href="https://www.instagram.com/murciaramirezcoffee?igsh=cHVld2J0MXVoZWRr"
+              target="_blank">
+              <img id="CR" src="./img/marcas/myr.jpg" class="Empresa 4"
+                style="border-radius: 50%;" />
+            </a>
+            <a href="https://www.instagram.com/laberintomilcaminos/"
+              target="_blank">
+              <img id="CR" src="./img/marcas/mil caminos.jpg" alt="Empresa 5"
+                style="border-radius: 50%;" />
+            </a>
+            <a href="https://www.instagram.com/boticasol/"
+              target="_blank">
+              <img id="CR" src="./img/marcas/botica sol.jpg" alt="Empresa 5"
+                style="border-radius: 50%;" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61562028640409"
+              target="_blank">
+              <img id="CR" src="./img/marcas/cantaleta.jpg" alt="Empresa 5"
+                style="border-radius: 50%;" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100038068970532"
+              target="_blank">
+              <img id="CR" src="./img/marcas/klula.jpg" alt="Empresa 5"
+                style="border-radius: 50%;" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-basic">
+        <footer>
+          
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          </ul>
+          <div class="social">
+            <a href="#"><i class="icon ion-social-instagram"></i></a>
+            <a href="#"><i class="icon ion-social-whatsapp"></i></a>
+            <a href="#"><i class="icon ion-social-facebook"></i></a>
+          </div>
+          <p class="copyright">Gubn© 2020</p>
+        </footer>
+      </div>
+      <!--
+      <footer style="background-color: #7ED958;">
+        <div class="container text-center mt-5 p-4">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-4 col-xxl-4">
+              <h4>Contactanos</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Porro, voluptatibus! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Debitis, aliquam.</p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 col-xxl-4">
+              <h4>Ayuda</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Porro, voluptatibus! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Doloremque, repellendus.</p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 col-xxl-4">
+              <h4>Siguenos</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Porro, voluptatibus!</p>
+              <i class="fa-brands fa-whatsapp"
+                style="font-size: 30px; padding: 4px;"></i>
+              <i class="fa-brands fa-facebook"
+                style="font-size: 30px; padding: 4px;"></i>
+              <i class="fa-brands fa-instagram"
+                style="font-size: 30px; padding:4px;"></i>
+              <i class="fa-brands fa-x-twitter"
+                style="font-size: 30px; padding:4px;"></i>
+            </div>
+
+          </div>
+        </div>
+      </footer>-->
+
+    </div>
+    <script>
+      // Función para calcular la distancia Levenshtein entre dos cadenas
+      function levenshtein(a, b) {
+        const matrix = Array.from({ length: b.length + 1 }, (_, i) => [i]);
+        for (let i = 0; i <= a.length; i++) matrix[0][i] = i;
+      
+        for (let i = 1; i <= b.length; i++) {
+          for (let j = 1; j <= a.length; j++) {
+            const cost = a[j - 1] === b[i - 1] ? 0 : 1;
+            matrix[i][j] = Math.min(
+              matrix[i - 1][j] + 1,       // eliminación
+              matrix[i][j - 1] + 1,       // inserción
+              matrix[i - 1][j - 1] + cost // sustitución
+            );
+          }
+        }
+        return matrix[b.length][a.length];
+      }
+      
+      const form = document.querySelector("form");
+      const input = document.querySelector("input[type='search']");
+      const content = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6");
+      
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const searchTerm = input.value.trim().toLowerCase();
+      
+        // Limpiar resaltados anteriores
+        content.forEach(el => {
+          el.innerHTML = el.innerText;
+        });
+      
+        if (searchTerm === "") return;
+      
+        let firstMatch = null;
+      
+        content.forEach(el => {
+          const words = el.innerText.split(/\s+/);
+          let found = false;
+      
+          words.forEach((word, index) => {
+            const cleanedWord = word.toLowerCase().replace(/[^a-z0-9áéíóúüñ]/gi, '');
+            const distance = levenshtein(searchTerm, cleanedWord);
+      
+            if (!found && distance <= 2) { // tolerancia de hasta 2 errores
+              const originalWord = words[index];
+              words[index] = `<span class="highlight">${originalWord}</span>`;
+              found = true;
+            }
+          });
+      
+          if (found) {
+            el.innerHTML = words.join(" ");
+            if (!firstMatch) firstMatch = el;
+          }
+        });
+      
+        if (firstMatch) {
+          firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
+      
+          setTimeout(() => {
+            content.forEach(el => {
+              el.innerHTML = el.innerText;
+            });
+          }, 5000);
+        }
+      });
+      </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"></script>
+
+  </body>
+</html>

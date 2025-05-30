@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Comic+Relief:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+}
+
+.custom-navbar {
+  background-color: #ebebeb86 !important;
+  border-radius: 15%;
+  border-color: #95AB63;
+}
+
+/*realce de cada likn en el navbar*/
+.custom-navbar .nav-link {
+  color: black !important;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.custom-navbar .nav-link:hover {
+  color: rgb(13, 183, 186) !important;
+  text-decoration:underline;
+  border: 2px solid rgba(245, 241, 27, 0.5);
+  border-radius: 10%;
+
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .navbar-toggler-icon {
+  color: black !important;
+}
+
+.custom-navbar .btn-outline-success {
+  border-color: black;
+  color: black;
+}
+
+.custom-navbar .btn-outline-success:hover {
+  background-color: black;
+  color: white;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Contenedor de las cards */
+.content-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Estilos para cada card */
+.card-flip {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+/* Estilo del interior de la card para el flip */
+.card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  position: relative;
+}
+
+.card-flip:hover .card {
+  transform: rotateY(180deg);
+}
+
+/* Estilo de las caras de la tarjeta */
+.card-delantera, .card-atras {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card-delantera {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-delantera .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  /* Filtro de oscuridad */
+  border-radius: 10px;
+}
+
+.contenido-card-delantera h1 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  z-index: 1;
+}
+
+.card-atras {
+  background-color: #95AB63;
+  transform: rotateY(180deg);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contenido-card-atras {
+  color: #333;
+
+}
+
+.contenido-card-atras h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.contenido-card-atras p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contenido-card-atras a {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.contenido-card-atras a:hover {
+  background-color: #0056b3;
+}
+
+.card-educate {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Esto ayuda a que se ajusten si no caben horizontalmente */
+}
+
+.card-delantera2 .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.card-delantera2, .card-atras {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card-delantera2 {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+.container-cards:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.educate:hover {
+  color: white;
+}*/
+/*
+
+.announcement-bar {
+ background-color: #ffffff; 
+  margin-top: 20px;
+  overflow: hidden;
+  display: flex;
+
+}*/
+
+.scroll-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(90deg,transparent,#fff 20%,#ffff 80%,transparent);
+}
+
+.scroll-text {
+  display: flex;
+  flex-grow: unset;
+  animation: animate 30s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-text img {
+  height: 90px;
+  margin: 0 3rem;
+}
+
+footer h4:hover {
+  color: white;
+}
+
+/*control de color gris para img cpn hover */
+#CR:not(:hover){
+filter: grayscale(100%);
+}
+
+/*pausa de carrusel con mouse */
+.scroll-container:hover div{
+animation-play-state: paused;
+}
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#2c7e71;
+  margin: 20px;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+  
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+  margin: 20px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+border: #95AB63;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
